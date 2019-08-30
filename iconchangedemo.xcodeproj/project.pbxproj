@@ -15,6 +15,8 @@
 		F3EADCE42318FE77008106F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EADCE32318FE77008106F8 /* main.m */; };
 		F3EADCEE2318FE77008106F8 /* iconchangedemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EADCED2318FE77008106F8 /* iconchangedemoTests.m */; };
 		F3EADCF92318FE77008106F8 /* iconchangedemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EADCF82318FE77008106F8 /* iconchangedemoUITests.m */; };
+		F3EADD09231904A9008106F8 /* iconbear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3EADD07231904A9008106F8 /* iconbear@2x.png */; };
+		F3EADD0A231904A9008106F8 /* iconbear@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3EADD08231904A9008106F8 /* iconbear@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		F3EADCF42318FE77008106F8 /* iconchangedemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iconchangedemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EADCF82318FE77008106F8 /* iconchangedemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iconchangedemoUITests.m; sourceTree = "<group>"; };
 		F3EADCFA2318FE77008106F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3EADD07231904A9008106F8 /* iconbear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconbear@2x.png"; sourceTree = "<group>"; };
+		F3EADD08231904A9008106F8 /* iconbear@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconbear@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		F3EADCD32318FE77008106F8 /* iconchangedemo */ = {
 			isa = PBXGroup;
 			children = (
+				F3EADD062319048D008106F8 /* icons */,
 				F3EADCD42318FE77008106F8 /* AppDelegate.h */,
 				F3EADCD52318FE77008106F8 /* AppDelegate.m */,
 				F3EADCD72318FE77008106F8 /* ViewController.h */,
@@ -130,6 +135,15 @@
 				F3EADCFA2318FE77008106F8 /* Info.plist */,
 			);
 			path = iconchangedemoUITests;
+			sourceTree = "<group>";
+		};
+		F3EADD062319048D008106F8 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				F3EADD07231904A9008106F8 /* iconbear@2x.png */,
+				F3EADD08231904A9008106F8 /* iconbear@3x.png */,
+			);
+			path = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +252,8 @@
 				F3EADCE12318FE77008106F8 /* LaunchScreen.storyboard in Resources */,
 				F3EADCDE2318FE77008106F8 /* Assets.xcassets in Resources */,
 				F3EADCDC2318FE77008106F8 /* Main.storyboard in Resources */,
+				F3EADD09231904A9008106F8 /* iconbear@2x.png in Resources */,
+				F3EADD0A231904A9008106F8 /* iconbear@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +460,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = iconchange.iconchangedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -461,7 +477,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = iconchange.iconchangedemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
